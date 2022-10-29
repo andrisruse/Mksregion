@@ -1,0 +1,50 @@
+{
+    "name": "andrisruse/indoregion",
+    "description": "Package containing region of Indonesia (provinces, regencies, districts, and villages) for Laravel",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "php",
+        "csv",
+        "indonesia",
+        "provinces",
+        "regencies",
+        "districts",
+        "villages",
+        "region"
+    ],
+    "authors": [
+        {
+            "name": "Andris Ruse",
+            "email": "andrisruse@gmail.com"
+        },
+        {
+            "name": "cacing69",
+            "email": "cacingworm69@gmail.com"
+        }
+    ],
+    "require": {
+        "parsecsv/php-parsecsv": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "andrisruse\\IndoRegion\\": "src/"
+        },
+        "files": [
+            "src/RawDataGetter.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "andrisruse\\IndoRegion\\IndoRegionServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "homepage": "https://andrisruse.com/",
+    "prefer-stable": true
+}
