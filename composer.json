@@ -1,5 +1,5 @@
 {
-    "name": "andrisruse/indoregion",
+    "name": "andrisruse/Mksregion",
     "description": "Package containing region of Indonesia (provinces, regencies, districts, and villages) for Laravel",
     "license": "MIT",
     "keywords": [
@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "andrisruse\\IndoRegion\\": "src/"
+            "andrisruse\\Mksregion\\": "src/"
         },
         "files": [
             "src/RawDataGetter.php"
@@ -40,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "andrisruse\\IndoRegion\\IndoRegionServiceProvider"
+                "andrisruse\\Mksregion\\MksregionServiceProvider"
             ],
             "aliases": {}
         }
