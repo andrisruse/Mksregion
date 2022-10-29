@@ -1,31 +1,31 @@
 <?php
 /*
- * This file is part of the IndoRegion package.
+ * This file is part of the Mksregion package.
  *
  * (c) Ibnul Mutaki <cacing69 | cacingworm@gmail.com>
  *
  */
 
-namespace AzisHapidin\IndoRegion;
+namespace andrisruse\Mksregion;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
-class IndoRegionPublishCommand extends Command
+class MksregionPublishCommand extends Command
 {
     /**
      * The console command signature.
      *
      * @var string
      */
-    protected $signature = 'indoregion:publish';
+    protected $signature = 'mksregion:publish';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Publish IndoRegion assets from vendor packages';
+    protected $description = 'Publish Mksregion assets from vendor packages';
 
     /**
      * Compatiblity for Lumen 5.5.
@@ -48,7 +48,7 @@ class IndoRegionPublishCommand extends Command
         $this->publishMigrations();
         $this->publishSeeds();
 
-        $this->info("Publishing IndoRegion complete");
+        $this->info("Publishing Mksregion complete");
     }
 
 
